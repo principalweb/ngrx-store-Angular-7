@@ -1,0 +1,83 @@
+.comparing-options-component
+  margin-top: 25px;
+
+.option
+  padding: 3px 0;
+
+.title
+  color: #4A4A4A;
+  font-family: Lato;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 42px;
+  text-align: left;
+
+.comparing-options
+  margin-top: 30px;
+  
+.comparing-title
+  margin-bottom: 20px;
+
+.option
+  padding: 5px 0;
+  align-items: center;
+
+.name
+  color: #4A4A4A;
+  font-family: Lato;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 17px;
+  // width: 455.96px;
+  width: 55%;
+  text-align: right;
+  margin-right: 35px;
+
+.allura-fc
+  margin-right: 50px;
+  margin-left: 10px;
+.allura-other
+  margin-right: 50px;
+  display: flex;
+.wood-vinyl
+  display: flex;
+img
+  font-size: 39px;
+  margin-right: 10px;
+
+ &.green
+  color: #4CBA38;
+
+ &.red
+  color: #FF6660;
+
+@media only screen and (max-width: 1024px)
+  .allura-other
+    margin-right: 52px;
+
+@media only screen and (max-width: 768px)
+  .name
+    width: 40%;
+
+@media only screen and (max-width: 425px)
+  .name
+    width: 30%;
+  .title
+    font-size: 30px!important;
+@media only screen and (max-width: 375px)
+  .name
+    font-size: 14px;
+  img
+    margin-right: 8px;
+    width: 28px
+
+  .allura-other,
+  .wood-vinyl
+    font-size: 13px;
+@media only screen and (max-width: 320px)
+  .allura-fc
+    margin-right: 26px;
+  .name
+    margin-right: 30px;
+  .title
+    font-size: 25px !important;

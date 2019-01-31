@@ -1,0 +1,17 @@
+<div class="silding-component">
+  <div class="header">
+    <div class="logo" routerLinkActive="active" routerLink = '/why'>
+      <img src="assets/images/header-logo.png">
+    </div>
+    <div class="btn-group">
+      <button mat-raised-button (click)="back()"><i class="fa fa-chevron-left" aria-hidden="true" ></i></button>
+      <button mat-raised-button (click)="forward()"><i [class]="curPageIdx <= 10 ? 'fa fa-chevron-right' : 'fa fa-undo'" aria-hidden="true" ></i></button>
+    </div>
+  </div>
+  <div class="siding-body" style="position: relative; top: 100px;" >
+    <!-- <router-outlet></router-outlet> -->
+    <div [@routeAnimations]="prepareRoute(outlet)" >
+      <router-outlet #outlet="outlet"></router-outlet>
+    </div>
+  </div>
+</div>

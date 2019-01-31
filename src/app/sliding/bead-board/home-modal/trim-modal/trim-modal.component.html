@@ -1,0 +1,11 @@
+<div class="trim-component">
+  <div class="component-title">
+    TRIM
+  </div>
+  <div class="option-buttons">
+    <button class="btn" [class.unactive]="curBtn !== 'traditional'" (click)="curBtn = 'traditional'">Traditional</button>
+    <button class="btn" [class.unactive]="curBtn == 'traditional'" (click)="curBtn = 'contemporary'">Contemporary</button>
+  </div>
+  <app-trim-traditional *ngIf="curBtn == 'traditional'"></app-trim-traditional>
+  <app-trim-contemporary *ngIf="curBtn !== 'traditional'"></app-trim-contemporary>
+</div>

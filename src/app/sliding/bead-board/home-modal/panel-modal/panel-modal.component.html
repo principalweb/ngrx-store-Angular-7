@@ -1,0 +1,11 @@
+<div class="panel-component">
+  <div class="component-title">
+    PANELS
+  </div>
+  <div class="option-buttons">
+    <button class="btn" [class.unactive]="curBtn !== 'traditional'" (click)="curBtn = 'traditional'">Traditional</button>
+    <button class="btn" [class.unactive]="curBtn == 'traditional'" (click)="curBtn = 'contemporary'">Contemporary</button>
+  </div>
+  <app-panel-traditional *ngIf="curBtn == 'traditional'"></app-panel-traditional>
+  <app-panel-contemporary *ngIf="curBtn !== 'traditional'"></app-panel-contemporary>
+</div>

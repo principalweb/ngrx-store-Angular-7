@@ -1,0 +1,11 @@
+<div class="shakes-shingles-component">
+  <div class="component-title">
+    SHINGLES
+  </div>
+  <div class="option-buttons">
+    <button class="btn" [class.unactive]="curBtn !== 'perfection'" (click)="curBtn = 'perfection'">Perfection</button>
+    <button class="btn" [class.unactive]="curBtn == 'perfection'" (click)="curBtn = 'multishake'">Shingle Panel</button>
+  </div>
+  <app-shakes-perfection *ngIf="curBtn == 'perfection'"></app-shakes-perfection>
+  <app-shakes-multishake *ngIf="curBtn !== 'perfection'"></app-shakes-multishake>
+</div>

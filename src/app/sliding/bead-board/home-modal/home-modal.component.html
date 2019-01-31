@@ -1,0 +1,15 @@
+<div class="home-modal-component">
+  <div class="modal-title">
+    <div class="modal-close" (click)="onNoClick()">
+    </div>
+  </div>
+  <div class="modal-body">
+    <app-beardboard-modal *ngIf="curPage == 'beadboard'"></app-beardboard-modal>
+    <app-trim-modal *ngIf="curPage == 'trim'"></app-trim-modal>
+    <app-panel-modal *ngIf="curPage == 'panel'"></app-panel-modal>
+    <app-shakes-shingles-modal *ngIf="curPage == 'shakes'"></app-shakes-shingles-modal>
+    <app-soffit-modal *ngIf="curPage == 'soffit'"></app-soffit-modal>
+    <app-lap-siding-modal *ngIf="curPage == 'lap'"></app-lap-siding-modal>
+    <!-- <app-weather-barrier-modal *ngIf="curPage == 'weather'"></app-weather-barrier-modal> -->
+  </div>
+</div>

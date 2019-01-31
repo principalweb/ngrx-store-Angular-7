@@ -1,0 +1,36 @@
+<div class="benefits-modal-component">
+  <div class="modal-body d-flex">
+    <div class="opions-body">
+      <app-non-combustible *ngIf="curPage == 'fire'"></app-non-combustible>
+      <app-termite-resistant *ngIf="curPage == 'pest'"></app-termite-resistant>
+      <app-weather-resistant *ngIf="curPage == 'weather'"></app-weather-resistant>
+      <app-impact-resistant *ngIf="curPage == 'impact'"> </app-impact-resistant>
+      <app-rot-resistant *ngIf="curPage == 'rot'"></app-rot-resistant>
+    </div>
+    <div class="opions">
+      <div class="close-btn">
+        <img src="assets/images/close.png" (click)="onNoClick()">
+      </div>
+      <div class="fire-btn">
+        <img [src]="curPage == 'fire' ? 'assets/images/fire-active.png' : 'assets/images/fire-icon.png'" (click)="setCurPage('fire')">
+        <div class="title">Fire</div>
+      </div>
+      <div class="pest-btn">
+        <img [src]="curPage == 'pest' ? 'assets/images/pest-active.png' : 'assets/images/pest-icon.png'" (click)="setCurPage('pest')">
+        <div class="title">Pest</div>
+      </div>
+      <div class="weather-btn">
+        <img [src]="curPage == 'weather' ? 'assets/images/weather-active.png' : 'assets/images/weather-icon.png'" (click)="setCurPage('weather')">
+        <div class="title">Weather</div>
+      </div>
+      <div class="impact-btn">
+        <img [src]="curPage == 'impact' ? 'assets/images/impact-active.png' : 'assets/images/impact-icon.png'" (click)="setCurPage('impact')">
+        <div class="title">Impact</div>
+      </div>
+      <div class="rot-btn">
+        <img [src]="curPage == 'rot' ? 'assets/images/rot-active.png' : 'assets/images/rot-icon.png'" (click)="setCurPage('rot')">
+        <div class="title">Rot</div>
+      </div>
+    </div>
+  </div>
+</div>

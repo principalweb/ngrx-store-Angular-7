@@ -1,0 +1,32 @@
+<div class="container comparing-options-component">
+  <div class="title">Comparing Your Options</div>
+  <div class="comparing-options">
+    <div class="comparing-title d-flex ">
+      <div class="name"></div>
+      <div class="allura-other">
+        <div style="margin-left: 6px">Allura</div>
+        <div style="margin-left: 8px;text-align: center; max-width: 40px;">Other FC</div>
+      </div>
+      <div class="wood-vinyl">
+        <div>Wood</div>
+        <div style="margin-left: 8px;">Vinyl</div>
+      </div>
+    </div>
+    <div class="option d-flex" *ngFor="let option of comparingOptions">
+      <div class="name">{{ option.name }}</div>
+      <div class="allura-fc">
+        <img [src]="option.allura ? 'assets/images/tick_blue.png' : 'assets/images/ticket_red.png'">
+        <img [src]="option.fc ? 'assets/images/tick_blue.png' : 'assets/images/ticket_red.png'">
+        <!-- <i [class]="option.allura ? 'fa fa-check-circle green' : 'fa fa-times-circle red'" aria-hidden="true"></i>
+        <i [class]="option.fc ? 'fa fa-check-circle green' : 'fa fa-times-circle red'" aria-hidden="true"></i> -->
+      </div>
+      <div class="wood-vinyl">
+        <img [src]="option.wood ? 'assets/images/tick_blue.png' : 'assets/images/ticket_red.png'">
+        <img [src]="option.vinyl ? 'assets/images/tick_blue.png' : 'assets/images/ticket_red.png'">
+
+        <!-- <i [class]="option.wood ? 'fa fa-check-circle green' : 'fa fa-times-circle red'" aria-hidden="true"></i>
+        <i [class]="option.vinyl ? 'fa fa-check-circle green' : 'fa fa-times-circle red'" aria-hidden="true"></i> -->
+      </div>
+    </div>
+  </div>
+</div>

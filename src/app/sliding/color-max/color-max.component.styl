@@ -1,0 +1,103 @@
+.color-max-component
+  background-image: url('../../../assets/images/ColorMax.png');
+  background-repeat: no-repeat;
+  height: calc(100vh - 100px);
+  background-size: cover
+  .colormax-logo
+    position: absolute;
+    top: 15%;
+    left: 139px;
+
+  .description-logo
+    justify-content: space-between;
+    padding: 0 143px;
+    position: relative;
+    top: 18%;
+    display: flex;
+
+  .title
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    width: 369px;
+    text-align: left;
+    margin-top: 23px;
+    // position: absolute;
+    // top: 181px;
+    // left: 139px;
+
+  .description
+    color: #FFFFFF;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 34px;
+    width: 430px;
+    text-align: left;
+    margin-top: 45px;
+    // position: absolute;
+    // top: 276px;
+    // left: 139px;
+  
+  button
+    position: absolute;
+    top: 70%;
+    left: 139px;
+    color: #51594A;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    line-height: 19px;
+    text-align: center;
+    padding: 15px 23px;
+
+  button:focus
+    outline: none;
+  
+  .not-available
+    color: #D2D2D2;
+    font-family: Lato;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: left;
+    position: absolute;
+    left: 139px;
+    top: 84%;
+
+@media only screen and (max-width: 768px)
+  .description-logo
+    padding: 0 25px!important;
+  .colormax-logo
+    left: 27px!important;
+  button
+    left: 27px!important;
+  .not-available
+    left: 27px!important;
+@media only screen and (max-width: 767px)
+  .year-logo
+    display: none;
+
+@media only screen and (max-width: 425px)
+  .description-logo
+    top: 23%!important;
+  .description
+    width: 350px!important;
+    margin-top: 16px!important;
+
+@media only screen and (max-width: 375px)
+  .title
+    font-size: 27px!important;
+    width: 339px!important;
+
+@media only screen and (max-width: 320px)
+  .title
+    font-size: 22px !important;
+    width: 279px !important;
+  .description
+    width: 291px !important;
+    font-size: 14px!important;
